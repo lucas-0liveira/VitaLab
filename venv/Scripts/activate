@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="E:\Pasta Lucas e Felipe\Projeto VsCode\Python\VitaLab_psw\venv"
+VIRTUAL_ENV="D:\Pasta Lucas e Felipe\Projeto VsCode\Python\VitaLab_psw\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
