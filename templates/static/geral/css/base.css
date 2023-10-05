@@ -1,0 +1,40 @@
+:root {
+  --main-color: #151c34;
+  --dark-color: #0c121c;
+  --light-color: #6de6ee;
+  --contrast-color: #f4c96b;
+  --differential-color: #066668;
+}
+* {
+  color: white;
+}
+
+.font-destaque {
+  color: var(--light-color);
+  font-size: 40px;
+}
+
+.input-default {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--differential-color);
+  padding: 7px;
+  width: 50%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.btn-default {
+  background-color: var(--light-color);
+  color: black;
+  width: 15%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.font-destaque-secundaria {
+  color: var(--light-color);
+  font-size: 35px;
+}
