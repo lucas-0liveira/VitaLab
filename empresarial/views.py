@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from django.contrib.auth.models import User
 
-# Create your views here.
 def gerenciar_clientes(request):
-    pass
+    clientes = User.objects.filter(is_staff=False)
+    
+    return render(request, 'gerenciar_clientes.html', {'clientes':clientes})
