@@ -6,6 +6,9 @@
 
 Para fazer com que o projeto funcione corretamente, tem que seguir os seguintes passos:
 
+ - **Selecionar o interpretador Python 3.11.6 64hit**
+ - **Instalar o pip install pillow e também o pip install djang caso tenha problemas nas importações**
+
 ## Criando um ambiente virtual
 
 **1º Primeiro devemos criar o ambiente virtual:**
