@@ -23,7 +23,11 @@
         <br>
         <div class="row">
             <div class="col-md-6">
+<<<<<<< HEAD
+                <form action="" method="POST">
+=======
                 <form action="{% url 'alterar_dados_exame' exame.id %}" method="POST" enctype="multipart/form-data">{% csrf_token %}
+>>>>>>> 033e1f463262c97baaabaa19bcedec2b351db03a
                     <input type="FILE" value="Alterar PDF" class="btn-secundario" name="resultado">
                
                     <br>
@@ -36,17 +40,29 @@
                 <h3>Status</h3>
 
                 <select name="status" id="" class="form-select">
+<<<<<<< HEAD
+                    <option style="color: black;" value="E">Em análise</option>
+                    <option style="color: black;" value="F">Finalizado</option>
+                </select>
+                <br>
+                <input type="checkbox" name="requer_senha" id=""><label for="">Requer senha para acessar ?</label>
+=======
                     <option style="color: black;" {% if exame.status == 'E' %}selected{% endif %} value="E">Em análise</option>
                     <option style="color: black;" {% if exame.status == 'F' %}selected{% endif %} value="F">Finalizado</option>
                 </select>
                 <br>
                 <input type="checkbox" name="requer_senha" {% if exame.requer_senha %}checked{% endif %} id=""><label for="">Requer senha para acessar ?</label>
+>>>>>>> 033e1f463262c97baaabaa19bcedec2b351db03a
                 <br>
                 <br>
 
                 <input type="submit" value="Salvar" class="btn-default">
                 </form>
+<<<<<<< HEAD
+                <a style="text-decoration: none;" href="" class="btn-secundario">Gerar senha</a>
+=======
                 <a style="text-decoration: none;" href="{% url 'gerar_senha' exame.id %}" class="btn-secundario">Gerar senha</a>
+>>>>>>> 033e1f463262c97baaabaa19bcedec2b351db03a
             </div>
         </div>
         
