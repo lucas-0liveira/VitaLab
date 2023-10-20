@@ -24,8 +24,11 @@ def cadastro (request):
             messages.add_message(request, constants.ERROR, 'Sua senha deve ter mais de 7 ou mais dígitos')
             return redirect('/usuarios/cadastro')
         
+        if User.objects.filter(username=username).exists():
+            messages.add_message(request, constants.ERROR, 'Já existe um usuário com esse username')
+            return redirect('/usuarios/cadastro')
+        
         try:
-            #TODO: Validar se o username do usuário não existe
             user = User.objects.create_user(
                 first_name = primeiro_nome,
                 last_name = ultimo_nome,
@@ -51,7 +54,7 @@ def logar (request):
 
         if user:
             login(request, user)
-            return redirect('/') # Vai dar erro por enquanto
+            return redirect('/exames/solicitar_exames')
         else:
             messages.add_message(request, constants.ERROR, 'Username ou Senhas inválidos')
             return redirect('/usuarios/login')

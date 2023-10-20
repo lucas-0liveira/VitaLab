@@ -90,7 +90,9 @@ def permitir_abrir_exame(request, exame_id):
     exame = SolicitacaoExame.objects.get(id=exame_id)
 
     if not exame.requer_senha:
-        # TODO: verificar se tem o PDF do resultado 
+        messages.add_message(request, constants.ERROR, 'Ainda não foi cadastrado seu resultado, entre em contato com o laboratório.')
+        if not exame.resultado:
+            return redirect('/exames/solicitar_exames/')
         return redirect(exame.resultado.url)
     
     return redirect(f'/exames/solicitar_senha_exame/{exame_id}')
