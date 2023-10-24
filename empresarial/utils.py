@@ -1,10 +1,19 @@
 import string
 from random import choice, shuffle
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 5b8980534c16ca9ac7ad3849a30921995ea34356
 import os
 from django.conf import settings
 from django.template.loader import render_to_string
 from weasyprint import HTML
 from io import BytesIO
+<<<<<<< HEAD
+=======
+>>>>>>> 033e1f463262c97baaabaa19bcedec2b351db03a
+>>>>>>> 5b8980534c16ca9ac7ad3849a30921995ea34356
 
 def gerar_senha_aleatoria(tamanho):
     caracteres_especiais = string.punctuation
@@ -31,6 +40,12 @@ def gerar_senha_aleatoria(tamanho):
     senha = list(letras + numeros + especiais)
     shuffle(senha)
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    return ''.join(senha)
+=======
+>>>>>>> 5b8980534c16ca9ac7ad3849a30921995ea34356
     return ''.join(senha)
 
 def gerar_pdf_exames(exame, paciente, senha):
@@ -45,3 +60,7 @@ def gerar_pdf_exames(exame, paciente, senha):
 
     return path_output
 
+<<<<<<< HEAD
+=======
+>>>>>>> 033e1f463262c97baaabaa19bcedec2b351db03a
+>>>>>>> 5b8980534c16ca9ac7ad3849a30921995ea34356

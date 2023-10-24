@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Meus Arquivos\Projeto Lucas\Projeto VsCode\Python\VitaLab_psw\venv
+set VIRTUAL_ENV=D:\Pasta Lucas e Felipe\Projeto VsCode\Python\VitaLab_psw\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

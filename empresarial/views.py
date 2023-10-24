@@ -5,9 +5,18 @@ from django.db.models import Value
 from django.contrib.admin.views.decorators import staff_member_required
 from exames.models import SolicitacaoExame
 from django.http import HttpResponse, FileResponse
+<<<<<<< HEAD
 from .utils import gerar_pdf_exames, gerar_senha_aleatoria
 from django.contrib import messages
 from django.contrib.messages import constants
+=======
+<<<<<<< HEAD
+=======
+from .utils import gerar_pdf_exames, gerar_senha_aleatoria
+from django.contrib import messages
+from django.contrib.messages import constants
+>>>>>>> 033e1f463262c97baaabaa19bcedec2b351db03a
+>>>>>>> 5b8980534c16ca9ac7ad3849a30921995ea34356
 
 @staff_member_required
 def gerenciar_clientes(request):
@@ -39,6 +48,12 @@ def proxy_pdf(request, exame_id):
 
     response = exame.resultado.open()
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    return HttpResponse(response)
+=======
+>>>>>>> 5b8980534c16ca9ac7ad3849a30921995ea34356
     return HttpResponse(response)
 
 def gerar_senha(request, exame_id):
@@ -71,3 +86,7 @@ def alterar_dados_exame(request, exame_id):
     exame.save()
     messages.add_message(request, constants.SUCCESS, 'Alteração realizada com sucesso')
     return redirect(f'/empresarial/exame_cliente/{exame_id}')
+<<<<<<< HEAD
+=======
+>>>>>>> 033e1f463262c97baaabaa19bcedec2b351db03a
+>>>>>>> 5b8980534c16ca9ac7ad3849a30921995ea34356

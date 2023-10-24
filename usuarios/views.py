@@ -54,7 +54,11 @@ def logar (request):
 
         if user:
             login(request, user)
+<<<<<<< HEAD
             return redirect('/exames/solicitar_exames/')
+=======
+            return redirect('/exames/solicitar_exames')
+>>>>>>> 5b8980534c16ca9ac7ad3849a30921995ea34356
         else:
             messages.add_message(request, constants.ERROR, 'Username ou Senhas inválidos')
             return redirect('/usuarios/login')
