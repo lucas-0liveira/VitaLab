@@ -37,7 +37,7 @@ Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos
 
 `python manage.py runserver`
 
-## como acessar o login
+## Como Acessar o Login Vitalab:
 
 - **Login: lucas123**
 - **Senha:12345678**
