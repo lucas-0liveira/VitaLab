@@ -1,10 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.db.models.functions import Concat
 from django.db.models import Value
 from django.contrib.admin.views.decorators import staff_member_required
 from exames.models import SolicitacaoExame
 from django.http import HttpResponse, FileResponse
+from .utils import gerar_pdf_exames, gerar_senha_aleatoria
+from django.contrib import messages
+from django.contrib.messages import constants
 
 @staff_member_required
 def gerenciar_clientes(request):
@@ -37,3 +40,34 @@ def proxy_pdf(request, exame_id):
     response = exame.resultado.open()
 
     return HttpResponse(response)
+
+def gerar_senha(request, exame_id):
+    exame = SolicitacaoExame.objects.get(id=exame_id)
+
+    if exame.senha:
+        return FileResponse(gerar_pdf_exames(exame.exame.nome, exame.usuario.first_name, exame.senha), filename="token.pdf")
+    
+    exame.senha = gerar_senha_aleatoria(9)
+    exame.save()
+    return FileResponse(gerar_pdf_exames(exame.exame.nome, exame.usuario.first_name, exame.senha), filename="token.pdf")
+
+def alterar_dados_exame(request, exame_id):
+    exame = SolicitacaoExame.objects.get(id=exame_id)
+
+    pdf = request.FILES.get('resultado')
+    status = request.POST.get('status')
+    requer_senha = request.POST.get('requer_senha')
+
+    if requer_senha and (not exame.senha):
+        messages.add_message(request, constants.ERROR, 'Para exigir a senha primeiro crie uma.')
+        return redirect(f'/empresarial/exame_cliente/{exame_id}')
+    
+    exame.requer_senha = True if requer_senha else False
+
+    if pdf:
+        exame.resultado = pdf
+        
+    exame.status = status
+    exame.save()
+    messages.add_message(request, constants.SUCCESS, 'Alteração realizada com sucesso')
+    return redirect(f'/empresarial/exame_cliente/{exame_id}')
