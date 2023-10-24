@@ -36,3 +36,8 @@ Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos
 ## Rodando o servidor para testes:
 
 `python manage.py runserver`
+
+## como acessar o login
+
+**login: lucas123**
+**senha:12345678**
