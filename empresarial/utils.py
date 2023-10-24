@@ -44,4 +44,5 @@ def gerar_pdf_exames(exame, paciente, senha):
     path_output.seek(0)
 
     return path_output
-
+  
+  

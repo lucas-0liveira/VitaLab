@@ -4,7 +4,10 @@
 
 ## Observação
 
-Para fazer com que o projeto funcione corretamente, tem que seguir os seguintes passos:
+Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos:
+
+ - **Selecionar o interpretador Python 3.11.6 64hit;**
+ - **Instalar o pip install pillow e também o pip install djang caso tenha problemas nas importações;**
 
 ## Criando um ambiente virtual
 
@@ -33,3 +36,8 @@ Para fazer com que o projeto funcione corretamente, tem que seguir os seguintes 
 ## Rodando o servidor para testes:
 
 `python manage.py runserver`
+
+## Como Acessar o Login Vitalab:
+
+- **Login: lucas123**
+- **Senha:12345678**
