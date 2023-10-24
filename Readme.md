@@ -39,5 +39,5 @@ Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos
 
 ## como acessar o login
 
-**login: lucas123**
-**senha:12345678**
+- **Login: lucas123**
+- **Senha:12345678**
