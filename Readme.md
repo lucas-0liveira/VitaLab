@@ -9,7 +9,7 @@ Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos
  - **Selecionar o interpretador Python 3.11.4 64hit;**
  - **Instalar o pip install pillow e também o pip install djang caso tenha problemas nas importações;**
 
-## Atualizando o diretório do python em sua máquina:
+## Atualizando o diretório do python em sua máquina(PC):
 
  - **vai na pasta 'venv', logo em seguida abra o arquivo chamado 'pyvenv.cfg';**
  - **entrando no arquivo você vai ter que atualizar o diretório no arquivo onde está instalado o seu python no seu computador;**
