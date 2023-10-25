@@ -11,7 +11,7 @@ Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos
 
 ## Atualizando o diretório do python em sua máquina:
 
- - **vai na pasta venv, logo em seguida abra o arquivo chamado 'pyvenv.cfg';**
+ - **vai na pasta 'venv', logo em seguida abra o arquivo chamado 'pyvenv.cfg';**
  - **entrando no arquivo você vai ter que atualizar o diretório no arquivo onde está instalado o seu python no seu computador;**
  - **atualize apenas o home, include-system-site-packages, executable e command;**
  - **dependendo da versão do seu python instalado, se for necessário atualize também no próprio arquivo 'pyvenv.cfg';**
