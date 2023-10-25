@@ -7,7 +7,7 @@
 Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos:
 
  - **Selecionar o interpretador Python 3.11.4 64hit;**
- - **Instalar o pip install pillow e também o pip install djang caso tenha problemas nas importações;**
+ - **Instalar o pip install pillow e também o pip install djang caso tenha problemas nas importações;** 
 
 ## Atualizando o diretório do python em sua máquina:
 
