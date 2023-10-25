@@ -16,8 +16,6 @@ Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos
  - **atualize apenas o home, include-system-site-packages, executable e command;**
  - **dependendo da versão do seu python instalado em sua máquina, se for necessário atualize também no próprio arquivo 'pyvenv.cfg';**
 
-**1º Primeiro devemos criar o ambiente virtual:**
-
 ## Ativando o 'venv'
 
 ### Linux
@@ -35,4 +33,4 @@ Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos
 ## Como Acessar o Login Vitalab:
 
 - **Login: lucas123**
-- **Senha:12345678**
+- **Senha: 12345678**
