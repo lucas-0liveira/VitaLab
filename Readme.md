@@ -18,7 +18,7 @@ Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos
 
 ## Ativando o 'venv'
 
-### Linux
+### Linux 
 
 `source venv/bin/activate`
 
