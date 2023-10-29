@@ -1,6 +1,6 @@
 # Projeto Vitalab
 
-![Vitalab](./templates/static/geral/img/logo.png)
+![Vitalab](./templates/static/geral/img/logo.png) 
 
 ## Observação
 
@@ -34,3 +34,4 @@ Para fazer com que o projeto funcione corretamente, tem que seguir alguns passos
  
 - **Login: lucas123**
 - **Senha: 12345678**
+ 
